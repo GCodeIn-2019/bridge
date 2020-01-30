@@ -13,8 +13,6 @@ def send(sender, message):
 def discordsend(text):
     #Put code here to send text to Discord
 
-#when you get a message from discord, call send(sendername, messagetext)
-
 def listen():
     buf = b''
     receiving = False
@@ -36,3 +34,6 @@ def listen():
 
 thread = threading.Thread(target=listen)
 thread.start()
+
+#put code here to listen on discord
+#when you get a message from discord, call send(sendername, messagetext)
