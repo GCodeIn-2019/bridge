@@ -61,6 +61,36 @@ the chat. This is to allow you to use a format that looks the least
 out-of-the-ordinary on your platform. The best format for showing messages on
 IRC may not be the same as the best format for Discord.
 
+### Message types
+Messages in the above formats are assumed to be normal messages. However,
+not all messages that may need bridging are normal messages. Therefore, there
+is an optional additional property in the JSON objects, `type`. If present,
+`type` should be one of the following:
+<table>
+	<thead>
+		<tr>
+			<td>`type`</td>
+			<td>Message body</td>
+		</tr>
+	</thead>
+	<tr>
+		<td>action</td>
+		<td>The message (what is put after /me)</td>
+	</tr>
+	<tr>
+		<td>rename</td>
+		<td>New nick/username</td>
+	</tr>
+	<tr>
+		<td>logon</td>
+		<td>Ignored</td>
+	</tr>
+	<tr>
+		<td>logoff</td>
+		<td>The quit message</td>
+	</tr>
+</table>
+
 ## Included bridges
 We include two bridges. One, `ircbridge.py`, is a "real" bridge for IRC. Just run it
 with no arguments for usage information.
