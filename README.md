@@ -69,3 +69,6 @@ The other, `msggen.py`, simply sends out a message every second for testing
 your bridges. It doesn't currently do anything when receiving messages. Don't
 run it when you also have "real" chat rooms/channels connected! It is quite
 annoying.
+
+We also include `log.py`, a logger. It takes one argument, the directory in
+which to place the logs.
