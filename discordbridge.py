@@ -12,7 +12,6 @@ def send(sender, message):
 
 def discordsend(text):
     #Put code here to send text to Discord
-    pass
     
 def listen():
     buf = b''
