@@ -31,6 +31,11 @@ socket can be used to make a `bridge` bridge.
 worry; all valid ASCII text means exactly the same thing in UTF-8. If your
 platform uses a different charset, be careful! You will most likely need to
 do some charset conversion.
+### Dependencies
+Install dependencies using pip.
+```shell
+pip install -r requirements.txt
+```
 ### Socket location
 The socket is located at `/tmp/chatbridge`.
 ### Initialization
